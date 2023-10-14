@@ -1,0 +1,46 @@
+
+#ifndef _TIMER0_CONFIG_H
+#define _TIMER0_CONFIG_H
+
+
+#define  TIMR0_PRELOAD_VALUE          152
+
+#define TIMR0_OV_COUNTER              2442
+
+#define  TIMR0_CTC_COUNTER           4500
+
+/*Range
+#define TIMER0_NORMAL
+#define TIMER0_CTC
+#define TIMER0_FAST_PWM
+#define TIMER0_PHASE_PWM
+*/
+
+#define TIMER0_MODE 		TIMER0_FAST_PWM
+/*
+NON_INVERTING_MODE
+INVERTING_MODE
+*/
+#define TIMER0_PWM_ACTION 		NON_INVERTING_MODE
+
+/*Range
+//#define		NO_PRESCALLER			0
+#define TIMER0_DIV_BY_1
+#define TIMER0_DIV_BY_8
+#define TIMER0_DIV_BY_64
+#define TIMER0_DIV_BY_256
+#define TIMER0_DIV_BY_1024
+*/
+#define TIMER0_PRESCALER  	TIMER0_DIV_BY_1024
+
+/*Range
+#define TIMER0_NO_ACTION
+#define TIMER0_TOGGLE
+#define TIMER0_SET
+#define TIMER0_CLEAR
+*/
+
+#define TIMER0_COM_EVENT   TIMER0_CLEAR
+
+
+#endif
